@@ -5,6 +5,7 @@
     "description": "DomNote browser extension",
     "default_locale": "en",
     "permissions": [
+        "storage",
         "<all_urls>",
         "*://*/*"
     ],
