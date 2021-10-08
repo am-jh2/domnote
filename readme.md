@@ -1,0 +1,1 @@
+This is the beginning of the best note keeping app for browsers. Let us begin!
