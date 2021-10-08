@@ -1,10 +1,11 @@
 {
     "manifest_version": 2,
-    "name": "DomeNote",
+    "name": "DomNote",
     "homepage_url": "https://github.com/xilesoftware/domnote/",
     "description": "DomNote browser extension",
     "default_locale": "en",
     "permissions": [
+        "storage",
         "<all_urls>",
         "*://*/*",
         "contextMenus"
@@ -33,7 +34,7 @@
     ],
     "browser_action": {
         "default_popup": "popup.html",
-        "default_title": "DomeNote",
+        "default_title": "DomNote",
         "default_icon": {
             "19": "icons/19.png",
             "38": "icons/38.png"
