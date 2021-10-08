@@ -11,9 +11,6 @@ browser.contextMenus.onClicked.addListener((text, tab)=> {
         console.log("tab: " + JSON.stringify(tab));
 
         getSelectionContent();
-        // browser.tabs.executeScript(null, {
-        //     file: '/js/selectionContent.js'
-        // });
     }
 });
 

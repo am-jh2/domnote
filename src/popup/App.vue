@@ -8,6 +8,11 @@
 
     <hr>
     <span style="color:#f00;">_{{ dataa }}_</span>
+    <span style="color:#000;">Highlights for domain {{ location }}: 
+        <ul>
+            <li v-for="highlight in highlights" :key="highlight">{{ highlight }}</li>
+        </ul>
+    </span>
 </template>
 
 <script>
@@ -20,12 +25,18 @@ export default {
 
     data: () => ({
         input: "",
-        dataa: { stuff: "eeer"}
+        dataa: { stuff: "eeer"},
+        location: null,
+        highlights: null
     }),
 
     created() {
         console.log("wegweg");
         this.getData();
+        chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+            this.location = tabs[0].url;
+        });
+        // this.location = window.location.host + window.location.pathname;
     },
 
     methods: {
@@ -40,6 +51,14 @@ export default {
             chrome.storage.sync.get(['key'], (result) => {
                 console.log('Data currently is ', result);
                 this.dataa = result;
+            });
+
+            chrome.storage.sync.get(this.location, (result) => {
+                console.log('getLocation data', result);
+                if (result) {
+                    this.highlights = result[this.location].highlights;
+                }
+                console.log('this.highlights', this.highlights);
             });
         }
     }
