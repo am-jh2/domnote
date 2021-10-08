@@ -7,7 +7,8 @@
     "permissions": [
         "storage",
         "<all_urls>",
-        "*://*/*"
+        "*://*/*",
+        "contextMenus"
     ],
     "icons": {
         "16": "icons/16.png",
@@ -20,6 +21,17 @@
         ],
         "persistent": false
     },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "/js/selectionContent.js"
+            ],
+            "all_frames": true
+        }
+    ],
     "browser_action": {
         "default_popup": "popup.html",
         "default_title": "DomNote",
