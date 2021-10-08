@@ -1,6 +1,6 @@
 <template>
     <hello-world msg="Popup component" />
-    popup page
+    popup page!
 </template>
 
 <script>

@@ -11,7 +11,12 @@ module.exports = {
             componentOptions: {
                 background: {
                     entry: 'src/background.js'
-                }
+                },
+                contentScripts: {
+                    entries: {
+                        selectionContent: './src/scripts/selectionContent.js'
+                    },
+                },
             }
         }
     }
