@@ -48,7 +48,7 @@ export default {
 
 <style>
 html {
-    width: 400px;
-    height: 400px;
+    width: 700px;
+    height: 500px;
 }
 </style>
