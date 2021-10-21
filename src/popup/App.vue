@@ -31,6 +31,7 @@
         <input v-model="input" placeholder="Write stuff to store here">
         <button @click="storeData()">Save</button>
         <button @click="getData()">Get data</button>
+        <button @click="clearData()">Clear data</button>
 
         <hr>
         <span style="color:#f00;">_{{ dataa }}_</span>
@@ -96,6 +97,11 @@ export default {
             console.log("CHANGE PAGE FROM", this.page, "TO", page);
             this.page = page;
         },
+        clearData() {
+            console.log('clear data');
+            chrome.storage.local.clear();
+            chrome.storage.sync.clear();
+        }
     }
 };
 </script>
