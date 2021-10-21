@@ -1,28 +1,34 @@
 <template>
-    <hello-world msg="Popup component" />
-    popup page
+    <div class="container">
+        <Header />
+        <Home />
+    </div>
+    <div class="TRASH REMOVE LATER" style="display:none;">
+        popup page
 
-    <input v-model="input" placeholder="Write stuff to store here">
-    <button @click="storeData()">Save</button>
-    <button @click="getData()">Get data</button>
-    <button @click="clearData()">Clear data</button>
+        <input v-model="input" placeholder="Write stuff to store here">
+        <button @click="storeData()">Save</button>
+        <button @click="getData()">Get data</button>
+        <button @click="clearData()">Clear data</button>
 
-    <hr>
-    <span style="color:#f00;">_{{ dataa }}_</span>
-    <span style="color:#000;">Highlights for domain {{ location }}: 
-        <ul>
-            <li v-for="highlight in highlights" :key="highlight">{{ highlight }}</li>
-        </ul>
-    </span>
+        <hr>
+        <span style="color:#f00;">_{{ dataa }}_</span>
+        <span style="color:#000;">Highlights for domain {{ location }}: 
+            <ul>
+                <li v-for="highlight in highlights" :key="highlight">{{ highlight }}</li>
+            </ul>
+        </span>
+    </div>
 </template>
 
 <script>
-import HelloWorld from "./../components/HelloWorld.vue";
+import Header from "../components/HeaderComponent.vue";
+import Home from "../components/HomeComponent.vue";
 
 export default {
-    name: "App",
+    name: "Domnote",
 
-    components: { HelloWorld },
+    components: { Header, Home },
 
     data: () => ({
         input: "",
@@ -32,7 +38,7 @@ export default {
     }),
 
     created() {
-        console.log("wegweg");
+        console.log("Created app");
         this.getData();
         chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
             this.location = tabs[0].url;
@@ -72,8 +78,41 @@ export default {
 </script>
 
 <style>
-html {
-    width: 400px;
-    height: 400px;
+body{
+    margin: 0;
 }
+html {
+    width: 700px;
+    height: 500px;
+    overflow: hidden;
+}
+.container{
+    display:grid;
+    grid-template-rows: max-content 1fr;
+    height: 100vh;
+}
+</style>
+
+<style>
+    /* SCROLLBAR */
+
+    /* width */
+    .container ::-webkit-scrollbar {
+        width: 0.5rem;
+    }
+
+    /* Track */
+    .container ::-webkit-scrollbar-track {
+        background: #eee;
+    }
+
+    /* Handle */
+    .container ::-webkit-scrollbar-thumb {
+        background: #666;
+    }
+
+    /* Handle on hover */
+    .container ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
 </style>
