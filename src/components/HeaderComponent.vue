@@ -1,6 +1,6 @@
 <template>
     <div class="dn-header">
-        <h1>www.dndbeyond.com<span>/oota/monster/the-lich-king</span></h1>
+        <h1><span class="domain" @click="$emit('changePage', 'page')">www.dndbeyond.com</span><span class="url">/oota/monster/the-lich-king</span></h1>
         <div class="sub-header">
             <h2>32 notes</h2>
         </div>
@@ -12,12 +12,18 @@ export default {
     name: "HeaderComponent",
 
     props: {
+        page: null
     },
+
+    emits: ['changePage'],
 
     mounted() {
     },
 
     computed: {
+    },
+
+    methods: {
     }
 };
 </script>
@@ -36,7 +42,11 @@ export default {
         font-size: 1.25rem;
         font-weight: bold;
     }
-    .dn-header h1 span{
+    .dn-header h1 span.domain:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    .dn-header h1 span.url{
         color: #666;
     }
     .dn-header h2{

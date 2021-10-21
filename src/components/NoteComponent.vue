@@ -1,7 +1,7 @@
 <template>
     <div class="dn-content-wrapper">
         <div class="filter">
-            <div class="total">1337 notes total</div>
+            <div class="total">1337 notes</div>
             <input type="text" placeholder="Search...">
         </div>
         <div class="scrollable-content">
@@ -153,10 +153,12 @@
 
 <script>
 export default {
-    name: "HomeComponent",
+    name: "NoteComponent",
 
     props: {
     },
+
+    emits: ['changePage'],
 
     mounted() {
     },
@@ -193,60 +195,5 @@ export default {
         border-radius: 5px;
         padding-left: 0.5rem;
         padding-right: 0.5rem;
-    }
-</style>
-
-<style scoped>
-    /* TABLE */
-    .xc-table {
-        display: grid;
-        grid-template-columns: repeat(4, minmax(max-content, auto));
-        /* background: #e4e4e4; */
-        border-left: 1px solid #eee;
-        border-right: 1px solid #eee;
-        /* border-radius: 5px; */
-        overflow: hidden;
-    }
-    .xc-table.assignments {
-        grid-template-columns: repeat(5, minmax(max-content, auto)) 80px;
-    }
-    .xc-table .xc-row {
-        display: contents;
-    }
-    .xc-table .xc-row .xc-data {
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-        border-top: 1px solid #eee;
-        display: grid;
-        place-items: center left;
-    }
-    .xc-table .xc-row.xc-header .xc-data {
-        background: #e1e1e1;
-        /* color: #fff; */
-        font-weight: bold;
-        border-color: #c7c7c7;
-    }
-    .xc-table .xc-row:last-of-type .xc-data {
-        border-bottom: 1px solid #eee;
-        /* border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px; */
-    }
-    .xc-table .xc-row:not(.xc-header):hover .xc-data {
-        background: #eee;
-    }
-
-    .xc-table .xc-row .xc-data.actions {
-        text-align: right;
-        display: grid;
-        grid-template-columns: max-content max-content max-content;
-        column-gap: 1rem;
-    }
-    .xc-table .xc-row .xc-data.actions svg {
-        margin-left: 5px;
-    }
-    .xc-table .xc-row .xc-data.actions svg:hover {
-        cursor: pointer;
     }
 </style>
