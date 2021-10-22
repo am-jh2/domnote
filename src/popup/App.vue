@@ -10,13 +10,11 @@
             <template v-else-if="page == 'page'">
                 <h1 class="clickable">www.dndbeyond.com</h1>
                 <div class="sub-header">
-                    <h2>32 pages</h2>
                 </div>
             </template>
             <template v-else-if="page == 'notes'">
                 <h1><span class="domain" @click="changePage('page')">www.dndbeyond.com</span><span class="url">/oota/monster/the-lich-king</span></h1>
                 <div class="sub-header">
-                    <h2>32 notes</h2>
                 </div>
             </template>
         </div>
@@ -24,10 +22,9 @@
         <Domain v-if="page == null" @change-page="changePage" />
         <Page v-else-if="page == 'page'" @change-page="changePage" />
         <Note v-else-if="page == 'notes'" @change-page="changePage" />
-    </div>
-    <div class="TRASH REMOVE LATER" style="display:none;">
-        popup page
 
+
+        <hr style="border-color: #f00;width: 100%;">
         <input v-model="input" placeholder="Write stuff to store here">
         <button @click="storeData()">Save</button>
         <button @click="getData()">Get data</button>
@@ -107,19 +104,19 @@ export default {
 </script>
 
 <style>
-body{
-    margin: 0;
-}
-html {
-    width: 700px;
-    height: 500px;
-    overflow: hidden;
-}
-.container{
-    display:grid;
-    grid-template-rows: max-content 1fr;
-    height: 100vh;
-}
+    body{
+        margin: 0;
+    }
+    html {
+        width: 700px;
+        height: 500px;
+        overflow: hidden;
+    }
+    .container{
+        display:grid;
+        grid-template-rows: max-content 1fr;
+        height: 100vh;
+    }
 </style>
 
 <style>
@@ -147,6 +144,7 @@ html {
 </style>
 
 <style scoped>
+    /* HEADER */
     .dn-header{
         width: 100%;
         height: max-content;
@@ -180,6 +178,28 @@ html {
         grid-template-columns: max-content;
         column-gap: 1rem;
         place-content: center;
+    }
+</style>
+
+<style>
+    /* FILTER */
+    .filter{
+        background: #e1e1e1;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+
+        display: grid;
+        grid-template-columns: max-content max-content;
+        place-items: center;
+        place-content: space-between;
+    }
+    .filter input{
+        border: 1px solid #888;
+        border-radius: 5px;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
     }
 </style>
 
@@ -226,5 +246,17 @@ html {
     }
     .xc-table .xc-row .xc-data.actions svg:hover {
         cursor: pointer;
+    }
+</style>
+
+<style>
+    /* CONTENT */
+    .dn-content-wrapper{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .dn-content-wrapper .scrollable-content{
+        overflow-y: scroll;
+        max-height: 484px;
     }
 </style>
