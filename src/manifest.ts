@@ -14,18 +14,16 @@ export async function getManifest() {
         version: pkg.version,
         description: pkg.description,
         homepage_url: "https://github.com/xilesoftware/domnote/",
-        browser_action: {
+        action: {
             default_icon: './assets/icon-512.png',
             default_popup: './dist/popup/index.html',
         },
         options_ui: {
             page: './dist/options/index.html',
             open_in_tab: true,
-            chrome_style: false,
         },
         background: {
-            page: './dist/background/index.html',
-            persistent: false,
+            service_worker: './dist/background/index.mjs',
         },
         icons: {
             16: './assets/icon-512.png',
@@ -36,19 +34,31 @@ export async function getManifest() {
             'tabs',
             'storage',
             'activeTab',
+            'contextMenus'
+        ],
+        host_permissions: [
             '<all_urls>',
             'http://*/',
             'https://*/',
-            'contextMenus'
         ],
-        content_scripts: [{
-            matches: ['http://*/*', 'https://*/*'],
-            js: ['./dist/contentScripts/index.global.js'],
-            all_frames: true
-        }],
+        content_scripts: [
+            {
+                matches: ['http://*/*', 'https://*/*'],
+                js: ['./dist/contentScripts/index.global.js'],
+            },
+        ],
         web_accessible_resources: [
-            'dist/contentScripts/style.css',
+            {
+                resources: ['dist/contentScripts/style.css'],
+                matches: ['<all_urls>'],
+            },
         ],
+        content_security_policy: {
+            extension_pages: isDev
+                // this is required on dev for Vite script to load
+                ? `script-src 'self' http://localhost:${port}; object-src 'self' http://localhost:${port}`
+                : 'script-src \'self\'; object-src \'self\'',
+        },
     }
 
     if (isDev) {
@@ -57,9 +67,6 @@ export async function getManifest() {
         // see src/background/contentScriptHMR.ts
         delete manifest.content_scripts
         manifest.permissions?.push('webNavigation')
-
-        // this is required on dev for Vite script to load
-        manifest.content_security_policy = `script-src \'self\' http://localhost:${port}; object-src \'self\'`
     }
 
     return manifest
