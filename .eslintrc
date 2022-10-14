@@ -1,0 +1,38 @@
+{
+    "extends": [
+        // add more generic rulesets here, such as:
+        // "eslint:recommended",
+        "plugin:vue/vue3-recommended"
+    ],
+    "rules": {
+        // override/add rules settings here, such as:
+        // "vue/no-unused-vars": "error"
+        "vue/max-attributes-per-line": ["error", {
+            "singleline": 20,
+            "multiline": {
+                "max": 1,
+                "allowFirstLine": false
+            }
+        }],
+        "vue/html-indent": ["error", 4, {
+            "attribute": 1,
+            "baseIndent": 1,
+            "closeBracket": 0,
+            "alignAttributesVertically": true,
+            "ignores": []
+        }],
+        "vue/no-v-html": "off",
+        "comma-dangle": ["error", "never"],
+        "vue/singleline-html-element-content-newline": "off",
+        // "vue/singleline-html-element-content-newline": ["error", {
+        //     "ignoreWhenNoAttributes": true,
+        //     "ignoreWhenEmpty": true
+        // }],
+        "vue/require-default-prop": "off",
+        "vue/html-self-closing": "off"
+    },
+    "plugins": [
+        "prettier",
+        "vue"
+    ]
+}
