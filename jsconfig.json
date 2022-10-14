@@ -1,9 +1,0 @@
-{
-    "include": [
-        "./src/**/*"
-    ],
-    "compilerOptions": {
-        "sourceMap": true
-    },
-    "exclude": ["node_modules"]
-}
