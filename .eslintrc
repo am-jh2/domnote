@@ -1,28 +1,28 @@
 {
-    "extends": "plugin:vue/vue3-recommended",
-    "rules": {
-        "vue/max-attributes-per-line": ["error", {
-            "singleline": 20,
-            "multiline": {
-                "max": 1,
-                "allowFirstLine": false
-            }
-        }],
-        "vue/html-indent": ["error", 4, {
-            "attribute": 1,
-            "baseIndent": 1,
-            "closeBracket": 0,
-            "alignAttributesVertically": true,
-            "ignores": []
-        }],
-        "vue/no-v-html": "off",
-        "comma-dangle": ["error", "never"],
-        "vue/singleline-html-element-content-newline": "off",
-        // "vue/singleline-html-element-content-newline": ["error", {
-        //     "ignoreWhenNoAttributes": true,
-        //     "ignoreWhenEmpty": true
-        // }],
-        "vue/require-default-prop": "off",
-        "vue/html-self-closing": "off"
-    }
+  "extends": "plugin:vue/vue3-recommended",
+  "rules": {
+      "vue/max-attributes-per-line": ["error", {
+          "singleline": 20,
+          "multiline": {
+              "max": 1,
+              "allowFirstLine": false
+          }
+      }],
+      "vue/html-indent": ["error", 4, {
+          "attribute": 1,
+          "baseIndent": 1,
+          "closeBracket": 0,
+          "alignAttributesVertically": true,
+          "ignores": []
+      }],
+      "vue/no-v-html": "off",
+      "comma-dangle": ["error", "never"],
+      "vue/singleline-html-element-content-newline": "off",
+      // "vue/singleline-html-element-content-newline": ["error", {
+      //     "ignoreWhenNoAttributes": true,
+      //     "ignoreWhenEmpty": true
+      // }],
+      "vue/require-default-prop": "off",
+      "vue/html-self-closing": "off"
+  }
 }
