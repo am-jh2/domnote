@@ -1,3 +1,8 @@
+<script setup lang="ts">
+// import { storageDemo } from '~/logic/storage'
+
+</script>
+
 <template>
     <div class="dn-content-wrapper">
         <div class="filter">
@@ -150,50 +155,3 @@
         </div>
     </div>
 </template>
-
-<script>
-export default {
-    name: "NoteComponent",
-
-    props: {
-    },
-
-    emits: ['changePage'],
-
-    mounted() {
-    },
-
-    computed: {
-    }
-};
-</script>
-
-<style scoped>
-    .dn-content-wrapper{
-        width: 100%;
-        box-sizing: border-box;
-    }
-    .dn-content-wrapper .scrollable-content{
-        overflow-y: scroll;
-        max-height: 484px;
-    }
-
-    .filter{
-        background: #e1e1e1;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-        padding-top: 0.25rem;
-        padding-bottom: 0.25rem;
-
-        display: grid;
-        grid-template-columns: max-content max-content;
-        place-items: center;
-        place-content: space-between;
-    }
-    .filter input{
-        border: 1px solid #888;
-        border-radius: 5px;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-    }
-</style>
