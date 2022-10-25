@@ -1,14 +1,9 @@
 <script setup lang="ts">
 // import { storageDemo } from '~/logic/storage'
-
-function openOptionsPage() {
-    browser.runtime.openOptionsPage();
-}
 </script>
 
 <template>
     <div class="dn-content-wrapper">
-        <button @click="openOptionsPage">[COG-ICON]</button>
         <div class="filter">
             <div class="total">2 websites</div>
             <input type="text" placeholder="Search..." />
