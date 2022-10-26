@@ -3,6 +3,23 @@
 
 </script>
 
+<script lang="ts">
+export default {
+    name: "NoteComponent",
+
+    props: {
+    },
+
+    emits: ['changePage'],
+
+    mounted() {
+    },
+
+    computed: {
+    }
+};
+</script>
+
 <template>
     <div class="dn-content-wrapper">
         <div class="filter">

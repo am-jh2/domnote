@@ -1,14 +1,38 @@
 <script setup lang="ts">
-// import { storageDemo } from '~/logic/storage;
+// import { storageDemo } from '~/logic/storage'
+</script>
 
+<script lang="ts">
+export default {
+    name: "Popup",
+
+    props: {
+    },
+
+    data: () => ({
+        popupView: 'note'
+    }),
+
+    emits: [],
+
+    mounted() {
+    },
+
+    methods: {
+        changePage(page: string){
+            console.log("ChangePage", page);
+            this.popupView = page;
+        }
+    }
+};
 </script>
 
 <template>
     <div class="dn-content-wrapper">
-        <header-component />
-        <!-- <page-component /> -->
-        <domain-component />
-        <!-- <note-component /> -->
+        <header-component :popupView="popupView" @changePage="changePage" />
+        <page-component v-if="popupView == 'page'" />
+        <domain-component v-if="popupView == 'domain'" />
+        <note-component v-if="popupView == 'note'" />
     </div>
 </template>
 

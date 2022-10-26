@@ -1,12 +1,32 @@
-<script setup lang="ts">
-// import { storageDemo } from '~/logic/storage'
-function openOptionsPage() {
-    browser.runtime.openOptionsPage();
-}
+<script lang="ts">
+export default {
+    name: "HeaderComponent",
+
+    props: {
+        popupView: null
+    },
+
+    emits: ['changePage'],
+
+    mounted() {
+    },
+
+    computed: {
+    },
+
+    methods: {
+        openOptionsPage() {
+            browser.runtime.openOptionsPage();
+        }
+    }
+};
 </script>
 
 <template>
     <div class="dn-header">
+        <button v-if="popupView != 'domain'" class="world-button" @click="$emit('changePage', 'domain')">[WORLD-ICON]</button>
+        <button v-else class="world-button" @click="$emit('changePage', 'note')">[NOTE-ICON]</button>
+
         <button class="settings-button" @click="openOptionsPage">[COG-ICON]</button>
         <h1><span class="domain" @click="$emit('changePage', 'page')">www.dndbeyond.com</span><span class="url">/oota/monster/the-lich-king</span></h1>
         <div class="sub-header">
@@ -57,6 +77,11 @@ function openOptionsPage() {
     place-content: center;
 }
 
+.world-button{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 .settings-button{
     position: absolute;
     top: 0;
