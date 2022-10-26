@@ -1,14 +1,26 @@
 <script setup lang="ts">
 // import { storageDemo } from '~/logic/storage'
+</script>
 
-function openOptionsPage() {
-    browser.runtime.openOptionsPage();
-}
+<script lang="ts">
+export default {
+    name: "DomainComponent",
+
+    props: {
+    },
+
+    emits: ['changePage'],
+
+    mounted() {
+    },
+
+    computed: {
+    }
+};
 </script>
 
 <template>
     <div class="dn-content-wrapper">
-        <button @click="openOptionsPage">[COG-ICON]</button>
         <div class="filter">
             <div class="total">2 websites</div>
             <input type="text" placeholder="Search..." />
