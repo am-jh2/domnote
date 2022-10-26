@@ -2,6 +2,23 @@
 // import { storageDemo } from '~/logic/storage'
 </script>
 
+<script lang="ts">
+export default {
+    name: "DomainComponent",
+
+    props: {
+    },
+
+    emits: ['changePage'],
+
+    mounted() {
+    },
+
+    computed: {
+    }
+};
+</script>
+
 <template>
     <div class="dn-content-wrapper">
         <div class="filter">
