@@ -36,7 +36,7 @@ export default {
                         Notes
                     </div>
                     <div class="xc-data">
-                        Last accessed
+                        Last updated
                     </div>
                     <div class="xc-data actions"></div>
                 </div>
