@@ -30,7 +30,7 @@ export default {
                 <div class="xc-row xc-header">
                     <div class="xc-data">Domain</div>
                     <div class="xc-data">Notes</div>
-                    <div class="xc-data">Last accessed</div>
+                    <div class="xc-data">Last updated</div>
                     <div class="xc-data actions"></div>
                 </div>
                 <div class="xc-row" @click="$emit('changePage', 'page')">

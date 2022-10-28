@@ -36,31 +36,51 @@ export default {
                         Notes
                     </div>
                     <div class="xc-data">
-                        Last accessed
+                        Last updated
                     </div>
                 </div>
                 <div class="xc-row" @click="$emit('changePage', 'notes')">
-                    <div class="xc-data">www.dndbeyond.com/monster</div>
+                    <div class="xc-data">
+                        <span class="length-limit">
+                            www.dndbeyond.com/monster
+                        </span>
+                    </div>
                     <div class="xc-data">23</div>
                     <div class="xc-data">2021-10-21 20:21</div>
                 </div>
                 <div class="xc-row" @click="$emit('changePage', 'notes')">
-                    <div class="xc-data">www.dndbeyond.com/area</div>
+                    <div class="xc-data">
+                        <span class="length-limit">
+                            www.dndbeyond.com/area
+                        </span>
+                    </div>
                     <div class="xc-data">55</div>
                     <div class="xc-data">2021-10-21 20:21</div>
                 </div>
                 <div class="xc-row" @click="$emit('changePage', 'notes')">
-                    <div class="xc-data">www.dndbeyond.com/boss</div>
+                    <div class="xc-data">
+                        <span class="length-limit">
+                            www.dndbeyond.com/boss
+                        </span>
+                    </div>
                     <div class="xc-data">55</div>
                     <div class="xc-data">2021-10-21 20:21</div>
                 </div>
                 <div class="xc-row" @click="$emit('changePage', 'notes')">
-                    <div class="xc-data">www.dndbeyond.com/oota</div>
+                    <div class="xc-data">
+                        <span class="length-limit">
+                            www.dndbeyond.com/oota/the-great-raid-of-the-missing-library-within-the-doomed-palace/page-1/section-32
+                        </span>
+                    </div>
                     <div class="xc-data">33</div>
                     <div class="xc-data">2021-10-21 20:21</div>
                 </div>
                 <div class="xc-row" @click="$emit('changePage', 'notes')">
-                    <div class="xc-data">www.dndbeyond.com/mm</div>
+                    <div class="xc-data">
+                        <span class="length-limit">
+                            www.dndbeyond.com/mm
+                        </span>
+                    </div>
                     <div class="xc-data">33</div>
                     <div class="xc-data">2021-10-21 20:21</div>
                 </div>
@@ -72,6 +92,6 @@ export default {
 <style scoped>
 /* TABLE */
 .xc-table {
-    grid-template-columns: repeat(3, minmax(max-content, auto));
+    grid-template-columns: 1fr max-content max-content;
 }
 </style>
