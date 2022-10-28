@@ -127,7 +127,7 @@ html {
 /* TABLE */
 .xc-table {
     display: grid;
-    grid-template-columns: repeat(4, minmax(max-content, auto));
+    grid-template-columns: 1fr 2fr max-content max-content;
     border-left: 1px solid #eee;
     border-right: 1px solid #eee;
     overflow: hidden;
@@ -145,6 +145,14 @@ html {
     border-top: 1px solid #eee;
     display: grid;
     place-items: center left;
+}
+.xc-table .xc-row .xc-data .length-limit {
+    white-space: nowrap; 
+    width: -moz-available;          /* WebKit-based browsers will ignore this. */
+    width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+    width: fill-available;
+    overflow: hidden;
+    text-overflow: ellipsis; 
 }
 
 .xc-table .xc-row.xc-header .xc-data {
@@ -166,10 +174,6 @@ html {
     display: grid;
     grid-template-columns: max-content max-content max-content;
     column-gap: 1rem;
-}
-
-.xc-table .xc-row .xc-data.actions svg {
-    margin-left: 5px;
 }
 
 .xc-table .xc-row .xc-data.actions svg:hover {

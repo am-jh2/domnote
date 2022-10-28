@@ -42,133 +42,338 @@ export default {
                 </div>
                 <div class="xc-row">
                     <div class="xc-data">horse in the grass</div>
-                    <div class="xc-data">This is important information that we must keep an eye on...</div>
+                    <div class="xc-data">
+                        <span class="length-limit">
+                            This is important information that we must keep an eye on. Keep in mind that this string is
+                            very long
+                        </span>
+                    </div>
                     <div class="xc-data">2021-10-21 20:21</div>
                     <div class="xc-data actions">
-                        [E][D]
+                        <button class="action-button">
+                            <icon-component icon="edit" />
+                        </button>
+                        <button class="action-button">
+                            <icon-component icon="delete" />
+                        </button>
                     </div>
                 </div>
                 <div class="xc-row">
                     <div class="xc-data">horse in the grass</div>
-                    <div class="xc-data">This is important information that we must keep an eye on...</div>
+                    <div class="xc-data">
+                        <span class="length-limit">
+                            This is important information that we must keep an eye on. Keep in mind that this string is
+                            very long
+                        </span>
+                    </div>
                     <div class="xc-data">2021-10-21 20:21</div>
                     <div class="xc-data actions">
-                        [E][D]
+                        <button class="action-button">
+                            <icon-component icon="edit" />
+                        </button>
+                        <button class="action-button">
+                            <icon-component icon="delete" />
+                        </button>
                     </div>
                 </div>
                 <div class="xc-row">
                     <div class="xc-data">horse in the grass</div>
-                    <div class="xc-data">This is important information that we must keep an eye on...</div>
+                    <div class="xc-data">
+                        <span class="length-limit">
+                            This is important information that we must keep an eye on. Keep in mind that this string is
+                            very long
+                        </span>
+                    </div>
                     <div class="xc-data">2021-10-21 20:21</div>
                     <div class="xc-data actions">
-                        [E][D]
+                        <button class="action-button">
+                            <icon-component icon="edit" />
+                        </button>
+                        <button class="action-button">
+                            <icon-component icon="delete" />
+                        </button>
                     </div>
                 </div>
                 <div class="xc-row">
-                    <div class="xc-data">This line is far too long t...</div>
-                    <div class="xc-data">So we decided to cut it.</div>
+                    <div class="xc-data">
+                        <span class="length-limit">
+                            This line is far too long too long for stuffs
+                        </span>
+                    </div>
+                    <div class="xc-data">
+                        <span class="length-limit">
+                            So we decided to cut it.
+                        </span>
+                    </div>
                     <div class="xc-data">2021-10-21 20:21</div>
                     <div class="xc-data actions">
-                        [E][D]
+                        <button class="action-button">
+                            <icon-component icon="edit" />
+                        </button>
+                        <button class="action-button">
+                            <icon-component icon="delete" />
+                        </button>
                     </div>
                 </div>
                 <div class="xc-row">
-                    <div class="xc-data">This line is far too long t...</div>
-                    <div class="xc-data">So we decided to cut it.</div>
+                    <div class="xc-data">
+                        <span class="length-limit">
+                            This line is far too long too long for stuffs
+                        </span>
+                    </div>
+                    <div class="xc-data">
+                        <span class="length-limit">
+                            So we decided to cut it.
+                        </span>
+                    </div>
                     <div class="xc-data">2021-10-21 20:21</div>
                     <div class="xc-data actions">
-                        [E][D]
+                        <button class="action-button">
+                            <icon-component icon="edit" />
+                        </button>
+                        <button class="action-button">
+                            <icon-component icon="delete" />
+                        </button>
                     </div>
                 </div>
                 <div class="xc-row">
-                    <div class="xc-data">This line is far too long t...</div>
-                    <div class="xc-data">So we decided to cut it.</div>
+                    <div class="xc-data">
+                        <span class="length-limit">
+                            This line is far too long too long for stuffs
+                        </span>
+                    </div>
+                    <div class="xc-data">
+                        <span class="length-limit">
+                            So we decided to cut it.
+                        </span>
+                    </div>
                     <div class="xc-data">2021-10-21 20:21</div>
                     <div class="xc-data actions">
-                        [E][D]
+                        <button class="action-button">
+                            <icon-component icon="edit" />
+                        </button>
+                        <button class="action-button">
+                            <icon-component icon="delete" />
+                        </button>
                     </div>
                 </div>
                 <div class="xc-row">
-                    <div class="xc-data">This line is far too long t...</div>
-                    <div class="xc-data">So we decided to cut it.</div>
+                    <div class="xc-data">
+                        <span class="length-limit">
+                            This line is far too long too long for stuffs
+                        </span>
+                    </div>
+                    <div class="xc-data">
+                        <span class="length-limit">
+                            So we decided to cut it.
+                        </span>
+                    </div>
                     <div class="xc-data">2021-10-21 20:21</div>
                     <div class="xc-data actions">
-                        [E][D]
+                        <button class="action-button">
+                            <icon-component icon="edit" />
+                        </button>
+                        <button class="action-button">
+                            <icon-component icon="delete" />
+                        </button>
                     </div>
                 </div>
                 <div class="xc-row">
-                    <div class="xc-data">This line is far too long t...</div>
-                    <div class="xc-data">So we decided to cut it.</div>
+                    <div class="xc-data">
+                        <span class="length-limit">
+                            This line is far too long too long for stuffs
+                        </span>
+                    </div>
+                    <div class="xc-data">
+                        <span class="length-limit">
+                            So we decided to cut it.
+                        </span>
+                    </div>
                     <div class="xc-data">2021-10-21 20:21</div>
                     <div class="xc-data actions">
-                        [E][D]
+                        <button class="action-button">
+                            <icon-component icon="edit" />
+                        </button>
+                        <button class="action-button">
+                            <icon-component icon="delete" />
+                        </button>
                     </div>
                 </div>
                 <div class="xc-row">
-                    <div class="xc-data">This line is far too long t...</div>
-                    <div class="xc-data">So we decided to cut it.</div>
+                    <div class="xc-data">
+                        <span class="length-limit">
+                            This line is far too long too long for stuffs
+                        </span>
+                    </div>
+                    <div class="xc-data">
+                        <span class="length-limit">
+                            So we decided to cut it.
+                        </span>
+                    </div>
                     <div class="xc-data">2021-10-21 20:21</div>
                     <div class="xc-data actions">
-                        [E][D]
+                        <button class="action-button">
+                            <icon-component icon="edit" />
+                        </button>
+                        <button class="action-button">
+                            <icon-component icon="delete" />
+                        </button>
                     </div>
                 </div>
                 <div class="xc-row">
-                    <div class="xc-data">This line is far too long t...</div>
-                    <div class="xc-data">So we decided to cut it.</div>
+                    <div class="xc-data">
+                        <span class="length-limit">
+                            This line is far too long too long for stuffs
+                        </span>
+                    </div>
+                    <div class="xc-data">
+                        <span class="length-limit">
+                            So we decided to cut it.
+                        </span>
+                    </div>
                     <div class="xc-data">2021-10-21 20:21</div>
                     <div class="xc-data actions">
-                        [E][D]
+                        <button class="action-button">
+                            <icon-component icon="edit" />
+                        </button>
+                        <button class="action-button">
+                            <icon-component icon="delete" />
+                        </button>
                     </div>
                 </div>
                 <div class="xc-row">
-                    <div class="xc-data">This line is far too long t...</div>
-                    <div class="xc-data">So we decided to cut it.</div>
+                    <div class="xc-data">
+                        <span class="length-limit">
+                            This line is far too long too long for stuffs
+                        </span>
+                    </div>
+                    <div class="xc-data">
+                        <span class="length-limit">
+                            So we decided to cut it.
+                        </span>
+                    </div>
                     <div class="xc-data">2021-10-21 20:21</div>
                     <div class="xc-data actions">
-                        [E][D]
+                        <button class="action-button">
+                            <icon-component icon="edit" />
+                        </button>
+                        <button class="action-button">
+                            <icon-component icon="delete" />
+                        </button>
                     </div>
                 </div>
                 <div class="xc-row">
-                    <div class="xc-data">This line is far too long t...</div>
-                    <div class="xc-data">So we decided to cut it.</div>
+                    <div class="xc-data">
+                        <span class="length-limit">
+                            This line is far too long too long for stuffs
+                        </span>
+                    </div>
+                    <div class="xc-data">
+                        <span class="length-limit">
+                            So we decided to cut it.
+                        </span>
+                    </div>
                     <div class="xc-data">2021-10-21 20:21</div>
                     <div class="xc-data actions">
-                        [E][D]
+                        <button class="action-button">
+                            <icon-component icon="edit" />
+                        </button>
+                        <button class="action-button">
+                            <icon-component icon="delete" />
+                        </button>
                     </div>
                 </div>
                 <div class="xc-row">
-                    <div class="xc-data">This line is far too long t...</div>
-                    <div class="xc-data">So we decided to cut it.</div>
+                    <div class="xc-data">
+                        <span class="length-limit">
+                            This line is far too long too long for stuffs
+                        </span>
+                    </div>
+                    <div class="xc-data">
+                        <span class="length-limit">
+                            So we decided to cut it.
+                        </span>
+                    </div>
                     <div class="xc-data">2021-10-21 20:21</div>
                     <div class="xc-data actions">
-                        [E][D]
+                        <button class="action-button">
+                            <icon-component icon="edit" />
+                        </button>
+                        <button class="action-button">
+                            <icon-component icon="delete" />
+                        </button>
                     </div>
                 </div>
                 <div class="xc-row">
-                    <div class="xc-data">This line is far too long t...</div>
-                    <div class="xc-data">So we decided to cut it.</div>
+                    <div class="xc-data">
+                        <span class="length-limit">
+                            This line is far too long too long for stuffs
+                        </span>
+                    </div>
+                    <div class="xc-data">
+                        <span class="length-limit">
+                            So we decided to cut it.
+                        </span>
+                    </div>
                     <div class="xc-data">2021-10-21 20:21</div>
                     <div class="xc-data actions">
-                        [E][D]
+                        <button class="action-button">
+                            <icon-component icon="edit" />
+                        </button>
+                        <button class="action-button">
+                            <icon-component icon="delete" />
+                        </button>
                     </div>
                 </div>
                 <div class="xc-row">
-                    <div class="xc-data">This line is far too long t...</div>
-                    <div class="xc-data">So we decided to cut it.</div>
+                    <div class="xc-data">
+                        <span class="length-limit">
+                            This line is far too long too long for stuffs
+                        </span>
+                    </div>
+                    <div class="xc-data">
+                        <span class="length-limit">
+                            So we decided to cut it.
+                        </span>
+                    </div>
                     <div class="xc-data">2021-10-21 20:21</div>
                     <div class="xc-data actions">
-                        [E][D]
+                        <button class="action-button">
+                            <icon-component icon="edit" />
+                        </button>
+                        <button class="action-button">
+                            <icon-component icon="delete" />
+                        </button>
                     </div>
                 </div>
                 <div class="xc-row">
-                    <div class="xc-data">This line is far too long t...</div>
-                    <div class="xc-data">So we decided to cut it.</div>
+                    <div class="xc-data">
+                        <span class="length-limit">
+                            This line is far too long too long for stuffs
+                        </span>
+                    </div>
+                    <div class="xc-data">
+                        <span class="length-limit">
+                            So we decided to cut it.
+                        </span>
+                    </div>
                     <div class="xc-data">2021-10-21 20:21</div>
                     <div class="xc-data actions">
-                        [E][D]
+                        <button class="action-button">
+                            <icon-component icon="edit" />
+                        </button>
+                        <button class="action-button">
+                            <icon-component icon="delete" />
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </template>
+
+<style scoped>
+.action-button {
+    color: #ff0;
+}
+</style>
