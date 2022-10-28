@@ -24,10 +24,9 @@ export default {
 
 <template>
     <div class="dn-header">
-        <button v-if="popupView != 'domain'" class="world-button" @click="$emit('changePage', 'domain')">[WORLD-ICON]</button>
-        <button v-else class="world-button" @click="$emit('changePage', 'note')">[NOTE-ICON]</button>
+        <button v-if="popupView != 'note'" class="world-button" @click="$emit('changePage', 'note')"><icon-component icon="home" /></button>
 
-        <button class="settings-button" @click="openOptionsPage">[COG-ICON]</button>
+        <button class="settings-button" @click="openOptionsPage"><icon-component icon="cog" /></button>
         <h1><span class="domain" @click="$emit('changePage', 'page')">www.dndbeyond.com</span><span class="url">/oota/monster/the-lich-king</span></h1>
         <div class="sub-header">
             <h2>32 notes</h2>
@@ -81,10 +80,14 @@ export default {
     position: absolute;
     top: 0;
     left: 0;
+    margin-top: 0.25rem;
+    padding-left: 0.25rem;
 }
 .settings-button{
     position: absolute;
     top: 0;
     right: 0;
+    margin-top: 0.25rem;
+    padding-right: 0.25rem;
 }
 </style>

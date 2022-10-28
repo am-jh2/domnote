@@ -1,8 +1,8 @@
 {
-  "name": "vitesse-webext",
-  "displayName": "Vitesse WebExt",
+  "name": "domnote",
+  "displayName": "Domnote",
   "version": "0.0.1",
-  "description": "[description]",
+  "description": "The best way to write your notes straight into any website!",
   "private": true,
   "scripts": {
     "dev": "npm run clear && cross-env NODE_ENV=development run-p dev:*",
