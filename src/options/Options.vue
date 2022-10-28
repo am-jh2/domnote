@@ -45,3 +45,7 @@ export default {
         </div>
     </main>
 </template>
+
+<script setup lang="ts">
+    import { storageDemo } from '~/logic/storage'
+</script>
